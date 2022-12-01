@@ -52,7 +52,7 @@
             // kava_btn
             // 
             this.kava_btn.BackColor = System.Drawing.Color.RosyBrown;
-            this.kava_btn.Location = new System.Drawing.Point(519, 148);
+            this.kava_btn.Location = new System.Drawing.Point(516, 100);
             this.kava_btn.Name = "kava_btn";
             this.kava_btn.Size = new System.Drawing.Size(62, 51);
             this.kava_btn.TabIndex = 1;
@@ -79,6 +79,7 @@
             this.osta_btn.TabIndex = 3;
             this.osta_btn.Text = "Osta pilet";
             this.osta_btn.UseVisualStyleBackColor = false;
+            this.osta_btn.Click += new System.EventHandler(this.osta_btn_Click);
             // 
             // filmid_pbox
             // 
@@ -93,7 +94,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.RosyBrown;
-            this.button1.Location = new System.Drawing.Point(433, 148);
+            this.button1.Location = new System.Drawing.Point(430, 100);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(62, 51);
             this.button1.TabIndex = 5;

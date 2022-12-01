@@ -40,7 +40,6 @@ namespace kino_tulusa
                 a = "film";
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (a == "film")
@@ -63,6 +62,12 @@ namespace kino_tulusa
                 filmid_pbox.Image = Image.FromFile(@"C:\Users\opilane\source\repos\Tulusa_Tarpv21\kino_tulusa\kino_tulusa\filmid\film2.jpg");
                 a = "film";
             }
+        }
+
+        private void osta_btn_Click(object sender, EventArgs e)
+        {
+            kysimused saal = new kysimused();
+            saal.ShowDialog();
         }
     }
 }

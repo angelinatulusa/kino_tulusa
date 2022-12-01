@@ -40,8 +40,9 @@ namespace kino_tulusa
                     tlp.Controls.Add(koht,j,i);
                     koht.Click += new EventHandler(Koht_Click);
                 }
-                this.Width = (koht.Width + 5) * kohad;
-                this.Height = (koht.Height + 35) * read;
+                //this.Width = (koht.Width + 55) * kohad;
+                //this.Height = (koht.Height + 10) * read;
+                this.AutoSize = true;
                 this.Controls.Add(tlp);
             }
         }
