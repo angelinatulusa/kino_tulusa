@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -10,11 +12,13 @@ namespace kino_tulusa
 {
     public class kohad : Form
     {
+        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\opilane\source\repos\kino_tulusa\kino_tulusa\AppData\kino.mdf;Integrated Security=True");
+        SqlCommand cmd;
+        SqlDataAdapter adapter;
         enum Nimetus { vaike,keskmine,suur};
         int Read;
         int Kohad;
         Button koht;
-
         public kohad(int read, int kohad)
         {
             Read = read;

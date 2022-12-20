@@ -17,7 +17,7 @@ namespace kino_tulusa
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-            //Application.Run(new kohad(3,4));//ряды //места
+            //Application.Run(new kohad(3,4));//места //ряды 
         }
     }
 }

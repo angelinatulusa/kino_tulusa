@@ -67,6 +67,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="kino.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kino.Designer.cs">
+      <DependentUpon>kino.cs</DependentUpon>
+    </Compile>
     <Compile Include="kohad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,11 +120,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>kino.mdf</DependentUpon>
     </Content>
+    <Content Include="filmid\Avatar.jpg" />
     <Content Include="filmid\film.jpg" />
-    <Content Include="filmid\film1.jpg" />
-    <Content Include="filmid\film3.jpg" />
-    <Content Include="filmid\film4.jpg" />
-    <Content Include="filmid\film2.jpg" />
+    <Content Include="filmid\Naeratus.jpg" />
+    <Content Include="filmid\Saagiks.jpg" />
+    <Content Include="filmid\Unistustemaa.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

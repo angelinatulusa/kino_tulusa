@@ -35,6 +35,10 @@
             this.osta_btn = new System.Windows.Forms.Button();
             this.filmid_pbox = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.nimi_lbl = new System.Windows.Forms.Label();
+            this.autor_lbl = new System.Windows.Forms.Label();
+            this.kestvus_lbl = new System.Windows.Forms.Label();
+            this.zanr_lbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.filmid_pbox)).BeginInit();
             this.SuspendLayout();
@@ -84,7 +88,7 @@
             // filmid_pbox
             // 
             this.filmid_pbox.Image = ((System.Drawing.Image)(resources.GetObject("filmid_pbox.Image")));
-            this.filmid_pbox.Location = new System.Drawing.Point(246, 66);
+            this.filmid_pbox.Location = new System.Drawing.Point(246, 58);
             this.filmid_pbox.Name = "filmid_pbox";
             this.filmid_pbox.Size = new System.Drawing.Size(136, 133);
             this.filmid_pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -102,11 +106,47 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // nimi_lbl
+            // 
+            this.nimi_lbl.AutoSize = true;
+            this.nimi_lbl.Location = new System.Drawing.Point(252, 206);
+            this.nimi_lbl.Name = "nimi_lbl";
+            this.nimi_lbl.Size = new System.Drawing.Size(0, 13);
+            this.nimi_lbl.TabIndex = 6;
+            // 
+            // autor_lbl
+            // 
+            this.autor_lbl.AutoSize = true;
+            this.autor_lbl.Location = new System.Drawing.Point(252, 232);
+            this.autor_lbl.Name = "autor_lbl";
+            this.autor_lbl.Size = new System.Drawing.Size(0, 13);
+            this.autor_lbl.TabIndex = 7;
+            // 
+            // kestvus_lbl
+            // 
+            this.kestvus_lbl.AutoSize = true;
+            this.kestvus_lbl.Location = new System.Drawing.Point(252, 256);
+            this.kestvus_lbl.Name = "kestvus_lbl";
+            this.kestvus_lbl.Size = new System.Drawing.Size(0, 13);
+            this.kestvus_lbl.TabIndex = 8;
+            // 
+            // zanr_lbl
+            // 
+            this.zanr_lbl.AutoSize = true;
+            this.zanr_lbl.Location = new System.Drawing.Point(252, 278);
+            this.zanr_lbl.Name = "zanr_lbl";
+            this.zanr_lbl.Size = new System.Drawing.Size(0, 13);
+            this.zanr_lbl.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(620, 334);
+            this.Controls.Add(this.zanr_lbl);
+            this.Controls.Add(this.kestvus_lbl);
+            this.Controls.Add(this.autor_lbl);
+            this.Controls.Add(this.nimi_lbl);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.filmid_pbox);
             this.Controls.Add(this.osta_btn);
@@ -119,6 +159,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.filmid_pbox)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -130,6 +171,10 @@
         private System.Windows.Forms.Button osta_btn;
         private System.Windows.Forms.PictureBox filmid_pbox;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label nimi_lbl;
+        private System.Windows.Forms.Label autor_lbl;
+        private System.Windows.Forms.Label kestvus_lbl;
+        private System.Windows.Forms.Label zanr_lbl;
     }
 }
 
