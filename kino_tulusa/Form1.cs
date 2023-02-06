@@ -14,7 +14,8 @@ namespace kino_tulusa
 {
     public partial class Form1 : Form
     {
-        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\opilane\source\repos\kino_tulusa\kino_tulusa\AppData\kino.mdf;Integrated Security=True");
+        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Zara\source\repos\kino_tulusa\kino_tulusa\AppData\kino.mdf;Integrated Security=True");
+        //SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\opilane\source\repos\kino_tulusa\kino_tulusa\AppData\kino.mdf;Integrated Security=True");
         SqlCommand cmd;
         public Form1()
         {

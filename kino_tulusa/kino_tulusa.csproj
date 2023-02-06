@@ -122,9 +122,12 @@
     </Content>
     <Content Include="filmid\Avatar.jpg" />
     <Content Include="filmid\film.jpg" />
+    <Content Include="kohad\kollane.jpg" />
     <Content Include="filmid\Naeratus.jpg" />
+    <Content Include="kohad\punane.jpg" />
     <Content Include="filmid\Saagiks.jpg" />
     <Content Include="filmid\Unistustemaa.jpg" />
+    <Content Include="kohad\roheline.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
