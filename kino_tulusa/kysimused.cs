@@ -20,8 +20,8 @@ namespace kino_tulusa
         public List<String> kohtNumList = new List<String>();
         SqlDataReader dr;
         SqlCommand cmd;
-        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Zara\source\repos\kino_tulusa\kino_tulusa\AppData\kino.mdf;Integrated Security=True");
-        //SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\opilane\source\repos\kino_tulusa\kino_tulusa\AppData\kino.mdf;Integrated Security=True");
+        //SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Zara\source\repos\kino_tulusa\kino_tulusa\AppData\kino.mdf;Integrated Security=True");
+        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\opilane\source\repos\kino_tulusa\kino_tulusa\AppData\kino.mdf;Integrated Security=True");
         public kysimused()
         {
             this.Size = new Size(1000, 600);
@@ -52,7 +52,7 @@ namespace kino_tulusa
 
         private void Osta_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("piletid on ostanud!");
+            MessageBox.Show("Piletid on ostanud!");
             this.Close();
             foreach (string ostudKoha in kohtNumList)
             {

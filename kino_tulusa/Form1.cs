@@ -14,17 +14,24 @@ namespace kino_tulusa
 {
     public partial class Form1 : Form
     {
-        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Zara\source\repos\kino_tulusa\kino_tulusa\AppData\kino.mdf;Integrated Security=True");
-        //SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\opilane\source\repos\kino_tulusa\kino_tulusa\AppData\kino.mdf;Integrated Security=True");
-        SqlCommand cmd;
+        //SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Zara\source\repos\kino_tulusa\kino_tulusa\AppData\kino.mdf;Integrated Security=True");
+        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\opilane\source\repos\kino_tulusa\kino_tulusa\AppData\kino.mdf;Integrated Security=True"); SqlCommand cmd;
         public Form1()
         {
             InitializeComponent();
         }
-        private void osta_btn_Click(object sender, EventArgs e)
+        public void osta_btn_Click(object sender, EventArgs e)
         {
-            kysimused saal = new kysimused();
-            saal.ShowDialog();
+            if (id_number>0)
+            {
+                kysimused saal = new kysimused();
+                saal.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Vali film!");
+            }
+            
         }
         public int lugemine_esindus()
         {
